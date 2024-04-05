@@ -4,6 +4,40 @@
 
 This project is a demo website for a plastering company, Hopkins Plaster Studio. The website provides information about the company, its products, and services. It also includes a blog section where users can read about various topics related to plastering and architecture. The website has a login system for users to create accounts and a shopping cart feature for purchasing products.
 
+## Demo Images
+
+### Home Page
+
+![Home Page](./demo/homepage.jpeg)
+
+### Blogs Page
+
+![Blogs Page](./demo/blogs.png)
+
+### Products Page
+
+![Prodcuts Page](./demo/products.png)
+
+### Contact Page
+
+![Contact Page](./demo/contactus.png)
+
+### Login Page
+
+![Login Page](./demo/login.png)
+
+### Register Page
+
+![Register Page](./demo/registerUser.png)
+
+### Cart Page
+
+![Cart Page](./demo/cart.png)
+
+### Checkout Page
+
+![Checkout Page](./demo/checkout.png)
+
 ## Features
 
 - **Home Page**: Displays general information about the company and its services.
