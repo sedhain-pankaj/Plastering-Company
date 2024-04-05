@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>HPS &mdash; Hopkins Plaster Studio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plaster, cornice, Plastering, website design, software development">
+    <meta name="author" content="Hopkins Plaster Studio">
+    <meta name="keywords" content="Plaster and Interior Design">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+      body {
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+      }
+
+      .wrapper {
+        padding: 80px;
+        height: 420px;
+        width: 654px;
+        margin: 50px auto;
+        border-radius: 7px 7px 7px 7px;
+        -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+      }
+
+      .product-img {
+        float: left;
+        height: 420px;
+        width: 327px;
+      }
+
+      .product-img img {
+        border-radius: 7px 0 0 7px;
+      }
+
+      .product-info {
+        float: left;
+        height: 420px;
+        width: 327px;
+        border-radius: 0 7px 10px 7px;
+        background-color: #ffffff;
+      }
+
+      .product-text {
+        height: 300px;
+        width: 327px;
+      }
+
+      .product-text h1 {
+        margin: 0 0 0 38px;
+        padding-top: 52px;
+        font-size: 34px;
+        color: #474747;
+      }
+
+      .product-text h1,
+      .product-price-btn p {
+        font-family: 'Bentham', serif;
+      }
+
+      .product-text h2 {
+        padding: 5px;
+        margin: 0 0 47px 38px;
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #d2d2d2;
+        letter-spacing: 0.2em;
+      }
+
+      .product-text p {
+        height: 125px;
+        margin: 0 0 0 38px;
+        font-family: 'Playfair Display', serif;
+        color: #8d8d8d;
+        line-height: 1.7em;
+        font-size: 15px;
+        font-weight: lighter;
+        overflow: hidden;
+      }
+
+      .product-price-btn {
+        height: 103px;
+        width: 327px;
+        margin-top: 17px;
+        position: relative;
+      }
+
+      .product-price-btn p {
+        display: inline-block;
+        position: absolute;
+        top: -13px;
+        height: 50px;
+        font-family: 'Trocchi', serif;
+        margin: 0 0 0 38px;
+        font-size: 28px;
+        font-weight: lighter;
+        color: #474747;
+      }
+
+      span {
+        display: inline-block;
+        height: 50px;
+        font-family: 'Suranna', serif;
+        font-size: 34px;
+      }
+
+      .product-price-btn button {
+        float: right;
+        display: inline-block;
+        height: 50px;
+        width: 176px;
+        margin: 35px 20px 0px 0px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #A40236;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .product-price-btn button:hover {
+        background-color: #000000;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- header -->
+      <div id="header">
+
+        <!-- logo -->
+        <a href="index.html" style="display:block; margin-left: 2%; margin-right: 2%;">
+          <img src="images/logo.png" alt="logo image"></a>
+
+        <!-- horizontal nav bar -->
+
+        <nav>
+          <ul>
+            <li><a href="index.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                Homepage</a></li>
+
+            <li><a href="itemspage.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                Products</a></li>
+
+            <li><a href="blogs.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                Blogs</a></li>
+
+            <li><a href="contactus.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                Contact Us</a></li>
+
+            <a href="login.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900; float: right;">
+              <img src="images/login.png" alt="login image" />Login</a>
+
+            <a href="cart.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+              <img src="images/cart.png" alt="cart image" />Cart</a>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      <!-- content -->
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/HP0677.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP0677</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Victorian gutter shown here with HP0801 Gothic Insert.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>140</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/HP0686.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP0686</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Largest Victorian gutter. Has shadowline on ceiling edge.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>220</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/HP0696.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP0696</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Large modilion with dental and big corbels.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>300</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/HP0710.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP0710</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Large cove. Also supplied in identical<br> medium version HP0727(225 x 200)<br> and smaller version
+              HP0909 (180 x 120).</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>140</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/HP0134.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP0134</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Flat panels for middle of the ceiling.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>900</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/HP3552.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP3552</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Lengths Available: 3.0m max To be <br> assembled with: Caps: HP3407, HP3420, HP3442, Base: HP3455.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>200</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/Louis.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Louis</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Suitable for French themed and contemporary homes. Supplied in one size only. (Call for more details)</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>4000</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/hp3430.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP3430</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Dimensions:<br> Length:385<br> Width:170<br> Depth:100</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>35</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/pc1.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>PC1</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Comes in larger version PC11 and has <br>matching cornices P1 and P11.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>180</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/861.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Strap 861</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Dimensions: 105 x 15".</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>60</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/2810.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>HP2810</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Dimensions:<br> Length:430<br> Width:250<br> Depth:105</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>100</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="product-img">
+          <img src="images/french-mirror-frame.jpg" height="420" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>French-Mirror-Frame</h1>
+            <h2>by Hopkins Plaster Studio</h2>
+            <p>Dimensions: 2050mm high approx<br>
+              Description: French style plaster mirror surround. Supplied in raw plaster
+              finish<br> ready for painting. Mirror not supplied.</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>$</span>3000</p>
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- footer -->
+      <div id="footer">
+        Copyright &copy; 1857-2019 Hopkins Plaster Studio Pty. Ltd.All Rights Reserved.<br>
+        This document was last modified on:
+        <script>
+          document.write(document.lastModified);
+        </script>
+      </div>
+    </div>
+    </div>
+
+  </body>
+
+</html>

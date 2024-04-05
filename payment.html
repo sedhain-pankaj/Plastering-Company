@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HPS &mdash; Hopkins Plaster Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plaster, cornice, Plastering, website design, software development">
+  <meta name="author" content="Hopkins Plaster Studio">
+  <meta name="keywords" content="Plaster and Interior Design">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+    }
+
+    .bill_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+
+  .bill_address {
+    flex: 50%;
+  }
+
+  .bill_address {
+    width: 80%;
+    padding: 5px 16px;
+    margin-top: 20px;
+    margin-left: 7%;
+    background-color:  	 	#A9A9A9;
+    border-radius: 30px;
+  }
+
+  input[type=text] {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1.5px solid  	#DC143C;
+    border-radius: 3px;
+  }
+
+  label {
+    margin-bottom: 10px;
+    display: block;
+    color: #800000;
+    font-size:14px;
+  }
+
+  .cards {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  .btn {
+    background-color: 	#DC143C;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+     font-family: "Times New Roman", Verdana, Arial, san-serif;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+</style>
+</head>
+
+
+
+<body>
+    <div id="container">
+      <!-- header -->
+      <div id="header">
+  
+        <!-- logo -->
+        <a href="index.html" style="display:block; margin-left: 2%; margin-right: 2%;"> 
+        <img src="images/logo.png" alt="logo image"></a>
+  
+          <!-- horizontal nav bar -->
+  
+          <nav>
+              <ul>
+                  <li><a href="index.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Homepage</a></li>
+  
+                  <li><a href="itemspage.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Products</a></li>
+                  
+                  <li><a href="blogs.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Blogs</a></li>
+  
+                  <li><a href="contactus.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Contact Us</a></li>
+  
+                  <a href="login.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900; float: right;">
+                      <img src="images/login.png" alt="login image" />Login</a>
+  
+                  <a href="cart.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      <img src="images/cart.png" alt="cart image" />Cart</a>  
+              </ul>
+          </nav>
+  
+      </div>
+
+      
+
+      <!-- content center -->
+      <div id="center">
+
+        <form method="POST" action="order.php">
+        <div class="bill_address">
+          <h3 style="color:#800000;">Billing Details</h3>
+
+          <label>Full Name</label>
+          <input type="text" id="fname" name="fullname" placeholder="John Barry" required>
+
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="text" id="email" name="email" placeholder="client@domain.com" required>
+
+          <label for="adr"><i class="fa fa-address-card-o"></i> Street </label>
+          <input type="text" id="adr" name="street" placeholder="108 Lonsdale Street" required>
+
+          <label for="city"><i class="fa fa-institution"></i> Sub-urb</label>
+          <input type="text" id="city" name="city" placeholder="Melbourne" required>
+
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" placeholder="VIC" required>
+
+          <label for="zip">Postal Code</label>
+          <input type="text" id="zip" name="zip" placeholder="3000" required>
+        </div>
+
+        <div class="bill_address">
+          <h3 style="color:#800000;">Payment</h3>
+
+          <label for="fname">Accepted Methods of Payment <br>Cards or PayPal</label>
+
+          <div class="cards">
+            <img src="images/payment.png" alt="payment" />
+          </div>
+
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="MR. JOHN BARRY" required>
+
+          <label for="ccnum">Credit Card Number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+
+          <label for="expmonth">Expiry Date</label>
+          <input type="text" id="expdate" name="expdate" placeholder="10/2022" required>
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="*** (Card Verification Value is printed on the back of the Card)" required>
+
+          <label><input type="checkbox" checked="checked" name="sameadr"> Shipping Address same as Billing Address</label>
+        </div>
+
+        <input type="submit" value="FINISH THE CHECKOUT" class="btn">
+
+      </form>
+      </div>
+
+
+      <!-- footer -->
+      <div id="footer">
+        Copyright &copy; 1857-2019 Hopkins Plaster Studio Pty. Ltd.All Rights Reserved.<br>
+        This document was last modified on:
+        <script>
+          document.write(document.lastModified);
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

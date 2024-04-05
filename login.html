@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HPS &mdash; Hopkins Plaster Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plaster, cornice, Plastering, website design, software development">
+  <meta name="author" content="Hopkins Plaster Studio">
+  <meta name="keywords" content="Plaster and Interior Design">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: black;
+    }
+
+    .login form {
+    background-color:    	#A9A9A9;
+    border-radius: 30px;
+    margin-right: 5px;
+  }
+
+  .login input[type=text],
+  input[type=password] {
+    width: 50%;
+    padding: 12px 12px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    border: 0.5px solid #ccc;
+
+    box-sizing: border-box;
+  }
+
+  .login button {
+    background-color: #DC143C;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 180px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .login button:hover {
+    opacity: 0.8;
+  }
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #DC143C;
+  }
+
+  /* .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+} */
+  /*
+.login img.avatar {
+    width: 40%;
+    border-radius: 50%;
+} */
+
+  .container {
+    padding: 5px;
+  }
+
+  .login span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+</style>
+</head>
+
+
+
+<body>
+    <div id="container">
+      <!-- header -->
+      <div id="header">
+  
+        <!-- logo -->
+        <a href="index.html" style="display:block; margin-left: 2%; margin-right: 2%;"> 
+        <img src="images/logo.png" alt="logo image"></a>
+  
+          <!-- horizontal nav bar -->
+  
+          <nav>
+              <ul>
+                  <li><a href="index.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Homepage</a></li>
+  
+                  <li><a href="itemspage.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Products</a></li>
+                  
+                  <li><a href="blogs.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Blogs</a></li>
+  
+                  <li><a href="contactus.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      Contact Us</a></li>
+  
+                  <a href="login.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900; float: right;">
+                      <img src="images/login.png" alt="login image" />Login</a>
+  
+                  <a href="cart.html" style="color:rgb(0, 0, 0); font-size: 20px; font-weight: 900;">
+                      <img src="images/cart.png" alt="cart image" />Cart</a>  
+              </ul>
+          </nav>
+  
+      </div>
+
+ 
+        <!-- content center -->
+          <div id="center">
+
+          <div class="login">
+
+            <form method="POST" action="login.php">
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+
+              <input type="text" placeholder="Enter Username" name="username" required></br>
+
+              <label for="psw"><b>Password</b></label>
+
+              <input type="password" placeholder="Enter Password" name="password" required></br>
+
+              <button type="submit" value="Login">Login</button>
+
+              <label><input type="checkbox" checked="checked" name="remember"> Remember me </label>
+
+              <button type="button" class="cancelbtn" onclick="window.location.href='index.html'">Cancel</button>
+
+              <a class="psw" href="forgetpassword.html">Forgot password?</a></br></br>
+              
+              <a href="register.html" style="text-align:center;">Not a member? Register now.</a>
+
+            </div>
+          </form>
+
+          </div>
+         </div>
+
+
+          <!-- footer -->
+          <div id="footer">
+              Copyright &copy; 1857-2019 Hopkins Plaster Studio Pty. Ltd.All Rights Reserved.<br>
+              This document was last modified on:
+              <script>
+                document.write(document.lastModified);
+              </script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
